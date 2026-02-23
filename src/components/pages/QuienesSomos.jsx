@@ -23,11 +23,9 @@ const QuienesSomos = () => {
     <section className="py-5">
       <Container>
         <h1 className="display-4 mb-3 footer-titulo">Nosotros</h1>
-        <div>
+        <div className="text-center w-75 mx-auto">
           <p className="text-white fs-5 mb-2">
-            Desde hace años, trabajamos con dedicación, para tratar de
-            superarnos y brindar un servicio de calidad a nuestros clientes,
-            haciendo con cariño y profesionalismo, cada uno desde su posición,
+            Desde hace años, trabajamos con dedicación, para superarnos día a día y brindar un servicio de calidad a nuestros clientes, haciendo con cariño y profesionalismo, cada uno desde su posición,
             lo mejor posible.
           </p>
           <p className="text-white fs-5 mb-5">Los que hacemos Lepa, somos:</p>

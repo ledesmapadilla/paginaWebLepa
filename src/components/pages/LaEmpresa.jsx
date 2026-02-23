@@ -2,7 +2,7 @@ import { Container } from "react-bootstrap";
 
 const LaEmpresa = () => {
   return (
-    <section className="empresa-descripcion">
+    <section className="empresa-descripcion pb-5">
       <div className="empresa-descripcion-overlay"></div>
       <div className="empresa-descripcion-content">
         <Container className="position-relative empresa-z2">
@@ -11,7 +11,7 @@ const LaEmpresa = () => {
           </h1>
         </Container>
         <Container className="position-relative empresa-z2">
-          <div className="empresa-titulo-row">
+          <div className="empresa-titulo-row justify-content-center">
             <img
               src="/img/empresa/et11tr.png"
               alt="Proyecto"
@@ -28,7 +28,7 @@ const LaEmpresa = () => {
           </div>
         </Container>
         <Container className="position-relative empresa-z2">
-          <h3 className="footer-titulo display-6 ms-5 mt-5 empresa-subtitulo">
+          <h3 className="footer-titulo display-6 ms-5 empresa-subtitulo">
             Equipos propios
           </h3>
         </Container>
@@ -49,7 +49,7 @@ const LaEmpresa = () => {
               <img src="/img/empresa/maquinas/pala.avif" alt="Equipo" className="equipo-icon equipo-icon-espejo" />
               <img src="/img/empresa/maquinas/pala.avif" alt="Equipo" className="equipo-icon" />
             </div>
-            <h4 className="equipo-nombre fs-4 equipo-nombre-arriba">Palas cargadoras</h4>
+            <h4 className="equipo-nombre fs-4">Palas cargadoras</h4>
           </div>
           <div className="equipo-item equipo-ml-0 ps-5 ms-5">
             <img src="/img/empresa/maquinas/retropala.png" alt="Equipo" className="equipo-icon equipo-icon-separado" /><img src="/img/empresa/maquinas/retropala.png" alt="Equipo" className="equipo-icon" />
@@ -63,11 +63,11 @@ const LaEmpresa = () => {
             <img src="/img/empresa/maquinas/carretontr.png" alt="Equipo" className="equipo-icon equipo-icon-grande" />
             <h4 className="equipo-nombre fs-4">Carretones</h4>
           </div>
-          <div className="equipo-item equipo-ml-5 mt-n3">
+          <div className="equipo-item equipo-ml-5">
             <img src="/img/empresa/maquinas/moto.png" alt="Equipo" className="equipo-icon" />
             <h4 className="equipo-nombre fs-4 ms-3">Motoniveladora</h4>
           </div>
-          <div className="equipo-item equipo-ml-6 mt-5 mb-0">
+          <div className="equipo-item equipo-ml-6">
             <div className="equipo-icons-vertical">
               <img src="/img/empresa/maquinas/gasoil.png" alt="Equipo" className="equipo-icon equipo-icon-gasoil" />
               <div className="equipo-icons-row">
@@ -75,7 +75,7 @@ const LaEmpresa = () => {
                 <img src="/img/empresa/maquinas/vibro1.png" alt="Equipo" className="equipo-icon equipo-icon-cont" />
               </div>
             </div>
-            <h4 className="equipo-nombre fs-4 equipo-nombre-accesorios">Accesorios</h4>
+            <h4 className="equipo-nombre fs-4">Accesorios</h4>
           </div>
         </Container>
       </div>

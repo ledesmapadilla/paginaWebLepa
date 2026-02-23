@@ -151,7 +151,7 @@ main {
   display: flex;
   align-items: center;
   gap: 0px;
-  margin-bottom: -110px;
+  margin-bottom: -80px;
 }
 
 .equipo-item .equipo-icon + .equipo-icon {
@@ -229,7 +229,7 @@ main {
 .equipo-ml-3 { margin-left: 50%; }
 .equipo-ml-4 { margin-left: 35%; }
 .equipo-ml-5 { margin-left: 65%; }
-.equipo-ml-6 { margin-left: 28%; }
+.equipo-ml-6 { margin-left: 10%; }
 
 .equipo-subir {
   position: relative;
