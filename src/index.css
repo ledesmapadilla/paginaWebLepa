@@ -859,12 +859,16 @@ video.rubro-video-construccion {
     margin-top: -35px;
   }
 
+  .equipo-icons-top {
+    margin-bottom: -10px;
+  }
+
   .equipo-icons-top .equipo-icon + .equipo-icon {
-    margin-left: -35px;
+    margin-left: -15px;
   }
 
   .equipo-icons-bottom {
-    margin-top: -30px;
+    margin-top: -10px;
   }
 
   .equipo-nombre-arriba {
