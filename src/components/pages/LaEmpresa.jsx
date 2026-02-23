@@ -69,8 +69,11 @@ const LaEmpresa = () => {
           </div>
           <div className="equipo-item equipo-ml-6 mt-5 mb-0">
             <div className="equipo-icons-vertical">
-              <img src="/img/empresa/maquinas/gasoil.png" alt="Equipo" className="equipo-icon" />
-              <img src="/img/empresa/maquinas/cont.png" alt="Equipo" className="equipo-icon equipo-icon-cont" />
+              <img src="/img/empresa/maquinas/gasoil.png" alt="Equipo" className="equipo-icon equipo-icon-gasoil" />
+              <div className="equipo-icons-row">
+                <img src="/img/empresa/maquinas/cont.png" alt="Equipo" className="equipo-icon equipo-icon-cont" />
+                <img src="/img/empresa/maquinas/vibro1.png" alt="Equipo" className="equipo-icon equipo-icon-cont" />
+              </div>
             </div>
             <h4 className="equipo-nombre fs-4 equipo-nombre-accesorios">Accesorios</h4>
           </div>
