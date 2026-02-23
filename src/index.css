@@ -879,9 +879,50 @@ video.rubro-video-construccion {
     margin-right: 10px !important;
   }
 
+  .equipo-nombre {
+    background-color: transparent;
+    font-size: 0.85rem !important;
+    margin-left: 0;
+  }
+
+  .empresa-subtitulo {
+    font-size: 1.1rem !important;
+  }
+
+  .empresa-descripcion .footer-titulo.display-4 {
+    font-size: 1.5rem !important;
+  }
+
   .equipo-ml-0, .equipo-ml-1, .equipo-ml-2,
   .equipo-ml-3, .equipo-ml-4, .equipo-ml-5, .equipo-ml-6 {
     margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .equipo-item {
+    margin-bottom: 8px !important;
+    margin-top: 0 !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    width: fit-content;
+  }
+
+  .equipo-item:nth-child(odd) {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+  }
+
+  .equipo-item:nth-child(even) {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+  }
+
+  .equipo-item:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  .equipo-nombre-accesorios {
+    top: 0;
   }
 
   .hero-img {
