@@ -1,6 +1,956 @@
-.root {
-  min-height: 100vh;
-display: flex;
-flex-direction: column; }
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  background-image: url("/img/Inicio/textura piedra gris.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
 
-main { flex-grow: 1; }
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(28, 26, 25, 0.75);
+  z-index: 0;
+  pointer-events: none;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+main {
+  flex-grow: 1;
+}
+
+/* Navbar */
+.navbar-logo {
+  height: 40px;
+}
+
+.navbar-custom {
+  background-color: #1c1a19;
+  padding: 2px 0;
+}
+
+.navbar-container {
+  padding-left: clamp(15px, 4vw, 40px);
+  padding-right: clamp(15px, 4vw, 40px);
+}
+
+.nav-item-custom {
+  font-family: "open sans", sans-serif !important;
+  color: #adadb2 !important;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s;
+  position: relative;
+}
+
+.nav-item-custom + .nav-item-custom::before {
+  content: "|";
+  color: #d1a948;
+  margin-right: 8px;
+  font-weight: 700;
+}
+
+.nav-item-custom:hover,
+.nav-item-custom.active {
+  color: #d1a948 !important;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23d1a948' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.custom-toggler {
+  border-color: #d1a948 !important;
+}
+
+/* La Empresa - Descripción */
+.empresa-descripcion {
+  position: relative;
+  background-image: url("/img/empresa/en6.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.empresa-descripcion-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 50px 0 60px 0;
+  gap: 40px;
+}
+
+.empresa-descripcion-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(28, 26, 25, 0.65);
+  z-index: 1;
+}
+
+.empresa-descripcion-texto {
+  color: #e0e0e0;
+  font-family: "open sans", sans-serif;
+  font-weight: 300;
+  line-height: 1.8;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 850px;
+}
+
+.empresa-titulo-row {
+  display: flex;
+  align-items: center;
+}
+
+.empresa-titulo-img {
+  max-height: 400px;
+  object-fit: contain;
+  margin-right: -15%;
+}
+
+.empresa-titulo-texto {
+  position: relative;
+  z-index: 1;
+}
+
+.empresa-z2 {
+  z-index: 2;
+}
+
+.empresa-subtitulo {
+  border-left: 3px solid #d1a948;
+  padding-left: 15px;
+}
+
+.equipo-item {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  margin-bottom: -110px;
+}
+
+.equipo-item .equipo-icon + .equipo-icon {
+  margin-left: -100px;
+}
+
+.equipo-icon-separado {
+  margin-right: 40px;
+}
+
+.equipo-icon-espejo {
+  transform: scaleX(-1);
+}
+
+.equipo-nombre-arriba {
+  margin-top: -50px;
+}
+
+.equipo-icons-vertical {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.equipo-icons-vertical .equipo-icon + .equipo-icon {
+  margin-top: -100px;
+  margin-left: 115px;
+}
+
+.equipo-icon-cont {
+  margin-left: 50px !important;
+}
+
+.equipo-nombre-accesorios {
+  position: relative;
+  top: -50px;
+}
+
+.equipo-item .equipo-icon.equipo-icon-grande {
+  width: clamp(125px, 21vw, 275px);
+  height: clamp(125px, 21vw, 275px);
+}
+
+.equipo-icons-piramide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  flex-shrink: 0;
+}
+
+.equipo-icons-top {
+  display: flex;
+  margin-bottom: -90px;
+}
+
+.equipo-icons-bottom {
+  display: flex;
+}
+
+.equipo-ml-0 { margin-left: 0; }
+.equipo-ml-1 { margin-left: 0; }
+.equipo-ml-2 { margin-left: 35%; }
+.equipo-ml-3 { margin-left: 50%; }
+.equipo-ml-4 { margin-left: 35%; }
+.equipo-ml-5 { margin-left: 65%; }
+.equipo-ml-6 { margin-left: 28%; }
+
+.equipo-subir {
+  position: relative;
+  top: -50px;
+}
+
+.equipo-icon {
+  width: clamp(80px, 14vw, 160px);
+  height: clamp(80px, 14vw, 160px);
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.equipo-nombre {
+  font-family: "open sans", sans-serif;
+  color: #e0e0e0;
+  font-weight: 500;
+  margin: 0;
+  margin-left: -30px;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 8px 15px;
+  border-radius: 4px;
+}
+
+main:has(.empresa-descripcion) + footer {
+  margin-top: 0 !important;
+}
+
+.empresa-descripcion-wrapper {
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+/* Footer */
+footer {
+  background-color: #1c1a19;
+}
+
+.footer-titulo {
+  color: #d1a948;
+}
+
+.footer-texto {
+  color: #adadb2;
+}
+
+.footer-copyright {
+  color: #adadb2;
+  font-size: 0.85rem;
+}
+
+.footer-mapa-container {
+  position: relative;
+}
+
+.footer-mapa {
+  width: 100%;
+  height: 80px;
+  border: 2px solid #d1a948;
+  border-radius: 4px;
+}
+
+.footer-mapa-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.modal-mapa-body {
+  background-color: #1c1a19;
+}
+
+.modal-mapa {
+  width: 100%;
+  height: clamp(300px, 60vh, 600px);
+  border: none;
+  border-radius: 4px;
+}
+
+.footer-equipo-img {
+  max-height: 80px;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.footer-equipo-img:hover {
+  opacity: 1;
+}
+
+.footer-hr {
+  border-color: #d1a948;
+  opacity: 0.5;
+}
+
+/* Clientes */
+.cliente-card {
+  background-color: rgba(180, 180, 180, 0.40);
+  border-radius: 10px;
+  padding: 18px 15px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 100%;
+}
+
+.cliente-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(209, 169, 72, 0.3);
+}
+
+.cliente-logo-wrapper {
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.cliente-logo {
+  width: 100%;
+  max-width: 160px;
+  max-height: 90px;
+  object-fit: contain;
+}
+
+.cliente-logo-lg {
+  max-width: 280px;
+  max-height: 130px;
+}
+
+.cliente-nombre {
+  color: #d1a948;
+  margin-bottom: 5px;
+}
+
+.cliente-detalle {
+  color: #e0e0e0;
+  font-size: 0.9rem;
+  margin-bottom: 3px;
+}
+
+
+/* Quiénes Somos */
+.equipo-foto {
+  width: clamp(100px, 18vw, 150px);
+  height: clamp(100px, 18vw, 150px);
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #d1a948;
+}
+
+/* Hero - imágenes de máquinas */
+.hero-img {
+  max-width: clamp(60%, 70vw, 75%);
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+
+/* Hero - solo lo que Bootstrap no cubre */
+.hero-titulo {
+  border-left: 4px solid #d1a948;
+  padding-left: 20px;
+}
+
+.hero-titulo-derecha {
+  border-right: 4px solid #d1a948;
+  padding-right: 20px;
+}
+
+.titulo-condensado {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+/* Carrusel infinito - Obras */
+.carrusel-container {
+  overflow: clip;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.carrusel-track {
+  display: flex;
+  gap: 5px;
+  width: max-content;
+  animation: carrusel-scroll 80s linear infinite;
+}
+
+.carrusel-img {
+  height: clamp(150px, 25vw, 250px);
+  width: clamp(230px, 35vw, 380px);
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.45);
+  flex-shrink: 0;
+}
+
+.carrusel-track-reverse {
+  animation: carrusel-scroll-reverse 112s linear infinite;
+}
+
+@keyframes carrusel-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes carrusel-scroll-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.obras-subtitulo {
+  text-align: center;
+  max-width: clamp(80%, 70vw, 60%);
+  margin: 0 auto;
+}
+
+/* Rubros - Obras */
+.rubro-titulo {
+  padding-left: 20px;
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  text-align: center;
+}
+
+.rubro-galeria {
+  display: grid;
+  gap: 6px;
+  height: 100%;
+}
+
+.rubro-galeria-1 {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.rubro-galeria-3 {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.rubro-galeria-3 .rubro-galeria-img:first-child {
+  grid-column: 1 / -1;
+}
+
+.rubro-galeria-img {
+  width: 100%;
+  height: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.45);
+}
+
+.rubro-img-gasoductos {
+  object-position: center 40%;
+}
+
+video.rubro-galeria-img {
+  max-height: 380px;
+  object-position: center 30%;
+}
+
+video.rubro-video-construccion {
+  object-position: center 70%;
+}
+
+.rubro-lista {
+  color: #ffffff;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  padding-left: 20px;
+  margin-top: 15px;
+  list-style: none;
+}
+
+.rubro-lista li {
+  margin-bottom: 6px;
+}
+
+.rubro-lista li::before {
+  content: "\2714";
+  color: #d1a948;
+  margin-right: 8px;
+}
+
+/* Responsive - Tablets */
+@media (max-width: 991.98px) {
+  .empresa-descripcion {
+    min-height: 100vh;
+    background-attachment: scroll;
+  }
+
+  .empresa-descripcion-content {
+    padding: 70px 0 0 0;
+    gap: 30px;
+  }
+
+  .empresa-descripcion-texto {
+    padding: 4px 8px;
+    line-height: 2;
+  }
+
+  .empresa-descripcion-wrapper {
+    max-width: 700px;
+  }
+
+  .empresa-titulo-img {
+    max-height: 250px;
+  }
+
+  .equipo-item {
+    margin-bottom: -30px;
+  }
+
+  .equipo-icon {
+    width: clamp(60px, 12vw, 120px) !important;
+    height: clamp(60px, 12vw, 120px) !important;
+  }
+
+  .equipo-item .equipo-icon.equipo-icon-grande {
+    width: clamp(100px, 18vw, 200px) !important;
+    height: clamp(100px, 18vw, 200px) !important;
+  }
+
+  .equipo-item .equipo-icon + .equipo-icon {
+    margin-left: -70px;
+  }
+
+  .equipo-icons-vertical .equipo-icon + .equipo-icon {
+    margin-left: 80px;
+    margin-top: -70px;
+  }
+
+  .equipo-icons-top .equipo-icon + .equipo-icon {
+    margin-left: -70px;
+  }
+
+  .equipo-icons-bottom {
+    margin-top: -60px;
+  }
+
+  .equipo-subir {
+    top: -30px;
+  }
+
+  .hero-img {
+    max-width: 85%;
+  }
+
+  .hero-titulo {
+    padding-left: 15px;
+  }
+
+  .hero-titulo-derecha {
+    padding-right: 15px;
+  }
+
+  .rubro-galeria-img {
+    max-height: 250px;
+  }
+
+  .cliente-logo-wrapper {
+    height: 110px;
+  }
+
+  .cliente-logo {
+    max-width: 140px;
+    max-height: 80px;
+  }
+
+  .cliente-logo-lg {
+    max-width: 230px;
+    max-height: 110px;
+  }
+
+  .navbar-logo {
+    height: 50px;
+  }
+
+  .display-1 {
+    font-size: 3rem !important;
+  }
+
+  .display-5 {
+    font-size: 1.6rem !important;
+  }
+
+  .display-6 {
+    font-size: 1.3rem !important;
+  }
+}
+
+/* Responsive - Móvil */
+@media (max-width: 767.98px) {
+  .empresa-descripcion {
+    min-height: 100vh;
+    background-attachment: scroll;
+  }
+
+  .empresa-descripcion-content {
+    padding: 60px 0 0 0;
+    gap: 20px;
+  }
+
+  .empresa-descripcion-texto {
+    padding: 3px 8px;
+    line-height: 1.9;
+  }
+
+  .empresa-descripcion-wrapper {
+    max-width: 90%;
+  }
+
+  .empresa-titulo-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .empresa-titulo-img {
+    max-height: 200px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .equipo-item {
+    margin-bottom: 0;
+  }
+
+  .equipo-ml-0, .equipo-ml-1, .equipo-ml-2,
+  .equipo-ml-3, .equipo-ml-4, .equipo-ml-5, .equipo-ml-6 {
+    margin-left: 0 !important;
+  }
+
+  .equipo-subir {
+    top: 0;
+  }
+
+  .equipo-nombre-arriba {
+    margin-top: 0;
+  }
+
+  .equipo-icon {
+    width: clamp(50px, 10vw, 100px) !important;
+    height: clamp(50px, 10vw, 100px) !important;
+  }
+
+  .equipo-item .equipo-icon.equipo-icon-grande {
+    width: clamp(80px, 15vw, 150px) !important;
+    height: clamp(80px, 15vw, 150px) !important;
+  }
+
+  .equipo-item .equipo-icon + .equipo-icon {
+    margin-left: -50px;
+  }
+
+  .equipo-icons-vertical .equipo-icon + .equipo-icon {
+    margin-left: 50px;
+    margin-top: -50px;
+  }
+
+  .equipo-icons-top .equipo-icon + .equipo-icon {
+    margin-left: -50px;
+  }
+
+  .equipo-icons-bottom {
+    margin-top: -40px;
+  }
+
+  .equipo-nombre-arriba {
+    margin-top: -30px;
+  }
+
+  .equipo-subir {
+    top: -20px;
+  }
+
+  .equipo-icon-separado {
+    margin-right: 20px !important;
+  }
+
+  .hero-img {
+    max-width: 100%;
+  }
+
+  .rubro-galeria-3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .rubro-galeria-img {
+    max-height: 200px;
+  }
+
+  .obras-subtitulo {
+    max-width: 95%;
+  }
+
+  .footer-copyright {
+    font-size: 0.75rem;
+  }
+
+  .nav-item-custom + .nav-item-custom::before {
+    display: none;
+  }
+
+  .cliente-logo-wrapper {
+    height: 100px;
+  }
+
+  .cliente-logo {
+    max-width: 130px;
+    max-height: 70px;
+  }
+
+  .cliente-logo-lg {
+    max-width: 200px;
+    max-height: 100px;
+  }
+
+  body {
+    background-attachment: scroll;
+    background-size: cover;
+  }
+
+  .navbar-logo {
+    height: 45px;
+  }
+
+  .hero-titulo,
+  .rubro-titulo {
+    border-left: none;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .rubro-titulo {
+    font-size: 1.6rem;
+  }
+
+  .rubro-lista {
+    font-size: 1rem;
+  }
+
+  video.rubro-galeria-img {
+    max-height: 350px;
+  }
+
+  .hero-titulo-derecha {
+    border-right: none;
+    padding-right: 0;
+    border-bottom: 3px solid #d1a948;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 1.3rem !important;
+  }
+
+  .display-1 {
+    font-size: 2.5rem !important;
+    text-align: center;
+  }
+
+  .display-5 {
+    font-size: 1.3rem !important;
+  }
+
+  .display-6 {
+    font-size: 1.1rem !important;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Responsive - Móvil chico */
+@media (max-width: 575.98px) {
+  .empresa-descripcion {
+    min-height: 100vh;
+    background-attachment: scroll;
+  }
+
+  .empresa-descripcion-content {
+    padding: 55px 0 0 0;
+    gap: 15px;
+  }
+
+  .empresa-descripcion-texto {
+    padding: 3px 6px;
+    line-height: 1.8;
+  }
+
+  .empresa-descripcion-wrapper {
+    max-width: 95%;
+  }
+
+  .empresa-titulo-img {
+    max-height: 160px;
+  }
+
+  .equipo-item {
+    margin-bottom: 0;
+  }
+
+  .equipo-subir {
+    top: 0;
+  }
+
+  .equipo-nombre-arriba {
+    margin-top: 0;
+  }
+
+  .equipo-icon {
+    width: clamp(40px, 9vw, 80px) !important;
+    height: clamp(40px, 9vw, 80px) !important;
+  }
+
+  .equipo-item .equipo-icon.equipo-icon-grande {
+    width: clamp(60px, 12vw, 120px) !important;
+    height: clamp(60px, 12vw, 120px) !important;
+  }
+
+  .equipo-item .equipo-icon + .equipo-icon {
+    margin-left: -35px;
+  }
+
+  .equipo-icons-vertical .equipo-icon + .equipo-icon {
+    margin-left: 30px;
+    margin-top: -35px;
+  }
+
+  .equipo-icons-top .equipo-icon + .equipo-icon {
+    margin-left: -35px;
+  }
+
+  .equipo-icons-bottom {
+    margin-top: -30px;
+  }
+
+  .equipo-nombre-arriba {
+    margin-top: -20px;
+  }
+
+  .equipo-subir {
+    top: -10px;
+  }
+
+  .equipo-icon-separado {
+    margin-right: 10px !important;
+  }
+
+  .equipo-ml-0, .equipo-ml-1, .equipo-ml-2,
+  .equipo-ml-3, .equipo-ml-4, .equipo-ml-5, .equipo-ml-6 {
+    margin-left: 0 !important;
+  }
+
+  .hero-img {
+    max-width: 100%;
+  }
+
+  .rubro-galeria-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .rubro-galeria-img {
+    max-height: 180px;
+  }
+
+  .obras-subtitulo {
+    max-width: 100%;
+  }
+
+  .footer-copyright {
+    font-size: 0.65rem;
+  }
+
+  .cliente-logo-wrapper {
+    height: 85px;
+  }
+
+  .cliente-logo {
+    max-width: 100px;
+    max-height: 60px;
+  }
+
+  .cliente-logo-lg {
+    max-width: 150px;
+    max-height: 85px;
+  }
+
+  .navbar-logo {
+    height: 35px;
+  }
+
+  .display-1 {
+    font-size: 2rem !important;
+  }
+
+  .display-5 {
+    font-size: 1.1rem !important;
+  }
+
+  .display-6 {
+    font-size: 1rem !important;
+  }
+
+  .hero-titulo {
+    font-size: 1.1rem !important;
+  }
+
+  .rubro-titulo {
+    font-size: 1.3rem;
+  }
+
+  .rubro-lista {
+    font-size: 0.9rem;
+  }
+
+  video.rubro-galeria-img {
+    max-height: 280px;
+  }
+
+  footer p {
+    font-size: 0.7rem;
+  }
+}
