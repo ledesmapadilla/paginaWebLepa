@@ -402,6 +402,10 @@ footer {
   padding-right: 20px;
 }
 
+.inicio-logo {
+  max-height: clamp(60px, 12vw, 120px);
+}
+
 .titulo-condensado {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;

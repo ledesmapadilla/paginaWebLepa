@@ -14,10 +14,12 @@ const Inicio = () => {
               Alquiler de máquinas viales
             </h2>
           </Col>
-          <Col md="auto" className="text-end">
-            <h1 className="text-white display-1 mb-0">
-              <span className="fw-bold">LEPA</span> <span className="fs-3" style={{ color: "#d1a948" }}>Hnos.</span>
-            </h1>
+          <Col md="auto" className="text-center text-md-end">
+            <img
+              src="/img/Inicio/Imagen8tr.png"
+              alt="LEPA Hnos. S.R.L."
+              className="img-fluid inicio-logo"
+            />
           </Col>
         </Row>
         <hr style={{ borderColor: "#d1a948", opacity: 1 }} />
