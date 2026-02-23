@@ -28,7 +28,7 @@ const QuienesSomos = () => {
             Desde hace años, trabajamos con dedicación, para superarnos día a día y brindar un servicio de calidad a nuestros clientes, haciendo con cariño y profesionalismo, cada uno desde su posición,
             lo mejor posible.
           </p>
-          <p className="text-white fs-5 mb-5">Los que hacemos Lepa, somos:</p>
+          <p className="text-white fs-5 mb-5">Nuestro equipo:</p>
         </div>
         <Row>
           {equipo.map((miembro, i) => (
