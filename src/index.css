@@ -153,7 +153,7 @@ main {
   display: flex;
   align-items: center;
   gap: 0px;
-  margin-bottom: -80px;
+  margin-bottom: -50px;
 }
 
 .equipo-item .equipo-icon + .equipo-icon {
@@ -204,8 +204,8 @@ main {
 }
 
 .equipo-item .equipo-icon.equipo-icon-grande {
-  width: clamp(125px, 21vw, 275px);
-  height: clamp(125px, 21vw, 275px);
+  width: clamp(175px, 28vw, 360px);
+  height: clamp(175px, 28vw, 360px);
 }
 
 .equipo-icons-piramide {
@@ -871,6 +871,11 @@ video.rubro-video-construccion {
     height: clamp(75px, 20vw, 130px) !important;
   }
 
+  .equipo-item:nth-child(4) .equipo-icon {
+    width: clamp(75px, 20vw, 130px) !important;
+    height: clamp(75px, 20vw, 130px) !important;
+  }
+
   .equipo-item .equipo-icon + .equipo-icon {
     margin-left: -35px;
   }
@@ -910,12 +915,12 @@ video.rubro-video-construccion {
   }
 
   .equipo-icons-top {
-    margin-bottom: -10px;
+    margin-bottom: 0;
   }
 
   .equipo-icons-top .equipo-icon {
-    width: clamp(100px, 28vw, 170px) !important;
-    height: clamp(100px, 28vw, 170px) !important;
+    width: clamp(75px, 20vw, 130px) !important;
+    height: clamp(75px, 20vw, 130px) !important;
   }
 
   .equipo-icons-top .equipo-icon + .equipo-icon {
@@ -935,7 +940,7 @@ video.rubro-video-construccion {
   }
 
   .equipo-icon-separado {
-    margin-right: 10px !important;
+    margin-right: 0 !important;
   }
 
   .equipo-nombre {
