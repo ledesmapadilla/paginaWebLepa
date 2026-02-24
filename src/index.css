@@ -145,6 +145,8 @@ main {
 .empresa-subtitulo {
   border-left: 3px solid #d1a948;
   padding-left: 15px;
+  display: inline-block;
+  margin-top: 30px;
 }
 
 .equipo-item {
@@ -217,6 +219,10 @@ main {
 .equipo-icons-top {
   display: flex;
   margin-bottom: -90px;
+}
+
+.equipo-icons-top .equipo-icon + .equipo-icon {
+  margin-left: -60px;
 }
 
 .equipo-icons-bottom {
@@ -861,29 +867,63 @@ video.rubro-video-construccion {
   }
 
   .equipo-item .equipo-icon.equipo-icon-grande {
-    width: clamp(95px, 25vw, 180px) !important;
-    height: clamp(95px, 25vw, 180px) !important;
+    width: clamp(75px, 20vw, 130px) !important;
+    height: clamp(75px, 20vw, 130px) !important;
   }
 
   .equipo-item .equipo-icon + .equipo-icon {
     margin-left: -35px;
   }
 
-  .equipo-icons-vertical .equipo-icon + .equipo-icon {
-    margin-left: 30px;
-    margin-top: -35px;
+  .equipo-icons-vertical {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .equipo-icons-vertical .equipo-icon.equipo-icon-espejo {
+    transform: none;
+  }
+
+  .equipo-icons-vertical > .equipo-icon + .equipo-icon {
+    display: none;
+  }
+
+  .equipo-icon-gasoil {
+    margin-left: 0 !important;
+    position: relative;
+    top: -15px;
+  }
+
+  .equipo-icons-row {
+    display: flex;
+    flex-direction: column;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+
+  .equipo-icons-row .equipo-icon-cont {
+    margin-left: 0 !important;
+  }
+
+  .equipo-icons-row .equipo-icon-cont + .equipo-icon-cont {
+    margin-top: -40px;
   }
 
   .equipo-icons-top {
     margin-bottom: -10px;
   }
 
+  .equipo-icons-top .equipo-icon {
+    width: clamp(100px, 28vw, 170px) !important;
+    height: clamp(100px, 28vw, 170px) !important;
+  }
+
   .equipo-icons-top .equipo-icon + .equipo-icon {
-    margin-left: -15px;
+    display: none;
   }
 
   .equipo-icons-bottom {
-    margin-top: -10px;
+    display: none;
   }
 
   .equipo-nombre-arriba {
@@ -901,7 +941,7 @@ video.rubro-video-construccion {
   .equipo-nombre {
     background-color: transparent;
     font-size: 0.85rem !important;
-    margin-left: 0;
+    margin-left: -15px;
   }
 
   .empresa-subtitulo {
@@ -919,10 +959,11 @@ video.rubro-video-construccion {
   }
 
   .equipo-item {
-    margin-bottom: 8px !important;
+    margin-bottom: 15px !important;
     margin-top: 0 !important;
     padding-left: 0 !important;
     margin-left: 0 !important;
+    margin-right: auto !important;
     width: fit-content;
   }
 
@@ -932,12 +973,18 @@ video.rubro-video-construccion {
   }
 
   .equipo-item:nth-child(even) {
-    margin-left: auto !important;
-    margin-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: auto !important;
   }
 
   .equipo-item:last-child {
     margin-bottom: 0 !important;
+  }
+
+  .equipo-item:last-child .equipo-nombre {
+    align-self: flex-start;
+    margin-top: 10px;
+    margin-left: 10px;
   }
 
   .equipo-nombre-accesorios {
