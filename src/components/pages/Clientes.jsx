@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 
 const clientes = [
-  { nombre: "Cia. Azucarera Los Balcanes", logo: "/img/Clientes/balcanes tr.png", obra: "Ingenio Florida y Cruz Alta", referencia: "Ing. Roberto Alvornoz" },
+  { nombre: "Cia. Azucarera Los Balcanes", logo: "/img/Clientes/balcanes tr.png", obra: "Ingenio Florida y Cruz Alta", referencia: "Ing. Roberto Albornoz" },
   { nombre: "Ivecor", logo: "/img/Clientes/ivecortr.png", obra: "Recounting gasoductos", referencia: "Ing. Garrido" },
   { nombre: "Citrusvil", logo: "/img/Clientes/citrusviltr.png", obra: "Arrancado de plantas de limón", referencia: "" },
   { nombre: "Argentilemon", logo: "/img/Clientes/argentilemontr.png", obra: "Arrancado de plantas de limón", referencia: "Ing. Marcos Rossini" },
