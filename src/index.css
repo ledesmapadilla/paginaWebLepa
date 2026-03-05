@@ -382,12 +382,40 @@ footer {
 
 
 /* Quiénes Somos */
-.equipo-foto {
-  width: clamp(100px, 18vw, 150px);
-  height: clamp(100px, 18vw, 150px);
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #d1a948;
+.nosotros-bg {
+  background-image: url("/img/quienes somos/en23.jpeg");
+  background-size: cover;
+  background-position: center 30%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.nosotros-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nosotros-contenido {
+  position: relative;
+}
+
+.nosotros-titulo {
+  background-color: rgba(0, 0, 0, 0.35);
+  display: table;
+  margin: 0 auto;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+.nosotros-texto {
+  width: 75%;
+  padding-top: 20vh;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+  z-index: 1;
 }
 
 /* Hero - imágenes de máquinas */
@@ -644,6 +672,10 @@ video.rubro-video-construccion {
 
 /* Responsive - Móvil */
 @media (max-width: 767.98px) {
+  .nosotros-texto {
+    width: 95%;
+    padding-top: 10vh;
+  }
   .empresa-descripcion {
     min-height: 100vh;
     background-attachment: scroll;

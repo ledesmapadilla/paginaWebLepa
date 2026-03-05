@@ -1,48 +1,24 @@
-import { Container, Row, Col } from "react-bootstrap";
-
-const equipo = [
-  { nombre: "Agustín", foto: "/img/quienes somos/agustin.jpg" },
-  { nombre: "J. Ignacio", foto: "/img/quienes somos/ignacio.jpg" },
-  { nombre: "Juan José", foto: "/img/quienes somos/juan jose.jpg" },
-  { nombre: "Nelson",  foto: "/img/quienes somos/nelson.jpg" },
-  { nombre: "Mauricio",  foto: "/img/quienes somos/mauricio.jpg" },
-  { nombre: "Alejandro", foto: "/img/quienes somos/alejandro.jpg" },
-  { nombre: "Rodrigo", foto: "/img/quienes somos/rodrigo.jpg" },
-  { nombre: "Gabriel", foto: "/img/quienes somos/gabriel.jpg" },
-  { nombre: "Hugo", foto: "/img/quienes somos/hugo.jpg" },
-  { nombre: "Daniel", foto: "/img/quienes somos/daniel.jpg" },
-  { nombre: "Cristian", foto: "/img/quienes somos/cristian.jpg" },
-  { nombre: "Rafael", foto: "/img/quienes somos/rafael.jpg" },
-  { nombre: "Ivan", foto: "/img/quienes somos/ivan.jpg" },
-  { nombre: "Pedro", foto: "/img/quienes somos/pedro.jpg" },
-  { nombre: "Misael", foto: "/img/quienes somos/misael.jpeg" },
-];
+import { Container } from "react-bootstrap";
 
 const QuienesSomos = () => {
   return (
-    <section className="py-5">
-      <Container>
-        <h1 className="display-4 mb-3 footer-titulo">Nosotros</h1>
-        <div className="text-center w-75 mx-auto">
-          <p className="text-white fs-5 mb-2">
-            Desde hace años, trabajamos con dedicación, para superarnos día a día y brindar un servicio de calidad a nuestros clientes, haciendo con cariño y profesionalismo, cada uno desde su posición,
-            lo mejor posible.
+    <section className="py-5 nosotros-bg">
+      <div className="nosotros-overlay" />
+      <Container className="nosotros-contenido">
+        <h1 className="display-4 footer-titulo text-center nosotros-titulo">Nosotros</h1>
+        <div className="text-center mx-auto nosotros-texto">
+          <p className="text-white fs-4 mb-2">
+            LEPA Construcciones es una empresa vial dedicada a dar soluciones
+            a las grandes empresas del medio. Cuenta con una amplia flota de
+            máquinas y herramientas, que le permite tanto desarrollar sus
+            propias obras, como proveer de equipos a las distintas industrias
+            de Tucumán. Su trabajo diario se apoya en un equipo de
+            colaboradores de muchos años de experiencia en sus tareas, personal
+            de apoyo y supervisión permanente y lo que le da su sello
+            distintivo, sus dueños ven personalmente cada trabajo, brindando al
+            cliente una permanente relación de confianza, apoyo y superación
           </p>
-          <p className="text-white fs-5 mb-5">Nuestro equipo:</p>
         </div>
-        <Row>
-          {equipo.map((miembro, i) => (
-            <Col key={i} lg={2} md={3} xs={12} className="text-center mb-4">
-              <img
-                src={miembro.foto}
-                alt={miembro.nombre}
-                className="equipo-foto mb-2"
-              />
-              <h5 className="text-white mb-0">{miembro.nombre}</h5>
-              <p className="footer-texto">{miembro.posicion}</p>
-            </Col>
-          ))}
-        </Row>
       </Container>
     </section>
   );
