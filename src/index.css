@@ -385,9 +385,10 @@ footer {
 .nosotros-bg {
   background-image: url("/img/quienes somos/retro cielo.jpg");
   background-size: cover;
-  background-position: center 30%;
+  background-position: center 50%;
   background-repeat: no-repeat;
   position: relative;
+  min-height: 100vh;
 }
 
 .nosotros-overlay {
@@ -413,7 +414,7 @@ footer {
 
 .nosotros-texto {
   width: 75%;
-  padding-top: 20vh;
+  padding-top: 60vh;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
   z-index: 1;
 }

@@ -2,12 +2,11 @@ import { Container } from "react-bootstrap";
 
 const QuienesSomos = () => {
   return (
-    <section className="py-5 nosotros-bg">
+    <section className="pt-5 nosotros-bg">
       <div className="nosotros-overlay" />
       <Container className="nosotros-contenido">
-        <h1 className="display-4 footer-titulo text-center nosotros-titulo">Nosotros</h1>
         <div className="text-center mx-auto nosotros-texto">
-          <p className="text-white fs-4 mb-2">
+          <p className="text-white fs-5 mb-0">
             LEPA Construcciones es una empresa vial dedicada a dar soluciones
             a las grandes empresas del medio. Cuenta con una amplia flota de
             máquinas y herramientas, que le permite tanto desarrollar sus
