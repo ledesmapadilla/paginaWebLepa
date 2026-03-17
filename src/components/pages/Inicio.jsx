@@ -7,7 +7,7 @@ const Inicio = () => {
         <Row className="align-items-center justify-content-center py-3">
           <Col md="auto" className="mb-3 mb-md-0">
             <h2 className="hero-titulo-derecha text-white display-5 mb-0">
-              Movimiento de suelo
+              Movimiento de suelos
               <br />
               Obras civiles
               <br />
